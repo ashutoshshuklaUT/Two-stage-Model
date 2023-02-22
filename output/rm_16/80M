@@ -1,0 +1,91 @@
+
+Gurobi 9.5.0 (mac64[rosetta2]) logging started Wed Nov  2 22:49:56 2022
+
+Set parameter LogFile to value "/Users/ashutoshshukla/Desktop/TwoStageModel/output/rm_16/80M"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (mac64[rosetta2])
+Thread count: 10 physical cores, 10 logical processors, using up to 10 threads
+Optimize a model with 211835 rows, 77925 columns and 600486 nonzeros
+Model fingerprint: 0x78cbbe11
+Variable types: 55985 continuous, 21940 integer (21578 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 1e+05]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 3e+00]
+  RHS range        [1e-02, 8e+07]
+
+MIP start from previous solve produced solution with objective 0.02082 (1.72s)
+Loaded MIP start from previous solve with objective 0.02082
+Processed MIP start in 1.75 seconds (2.08 work units)
+
+Presolve removed 189349 rows and 52846 columns
+Presolve time: 1.65s
+Presolved: 22486 rows, 25079 columns, 97412 nonzeros
+Variable types: 21852 continuous, 3227 integer (3218 binary)
+Root barrier log...
+
+Ordering time: 0.01s
+
+Barrier statistics:
+ Dense cols : 20
+ AA' NZ     : 1.465e+05
+ Factor NZ  : 7.047e+05 (roughly 20 MB of memory)
+ Factor Ops : 4.810e+07 (less than 1 second per iteration)
+ Threads    : 10
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   5.04313807e+02 -9.92031527e+05  4.78e+02 6.20e-02  3.57e+02     4s
+   1   3.49281726e+02 -7.87823800e+05  1.97e+02 1.55e+00  1.48e+02     4s
+   2   2.07185026e+01 -4.09292771e+05  1.57e+01 8.31e-13  1.81e+01     4s
+   3   4.08741021e+00 -1.23029930e+05  2.42e+00 1.42e-13  3.69e+00     4s
+   4   7.45640887e-01 -2.13367572e+04  4.49e-01 3.41e-13  5.94e-01     4s
+   5   1.59597754e-01 -3.89948676e+03  9.04e-02 5.54e-13  1.04e-01     4s
+   6   9.92997913e-02 -2.25546612e+03  4.73e-02 2.92e-13  5.77e-02     4s
+   7   5.49160162e-02 -1.08445640e+03  1.97e-02 1.42e-13  2.68e-02     4s
+   8   2.22019807e-02 -9.41378784e+01  8.21e-04 4.55e-13  2.19e-03     4s
+   9   2.08343877e-02 -8.60622488e+00  1.50e-05 7.82e-14  1.91e-04     4s
+  10   2.08079310e-02 -9.59187738e-02  3.73e-11 2.59e-13  2.57e-06     4s
+  11   5.63585986e-03 -1.10360166e-01  1.62e-11 2.47e-13  2.55e-06     4s
+  12   1.55680993e-03 -8.61172970e-03  2.27e-11 1.42e-14  2.24e-07     4s
+  13   2.71717552e-05 -1.05995391e-04  2.76e-11 2.22e-16  2.93e-09     4s
+  14   2.71713460e-08 -1.05997018e-07  1.23e-11 2.66e-15  2.93e-12     4s
+  15   1.48342681e-13  1.38555833e-13  5.55e-13 2.22e-16  3.56e-18     4s
+
+Barrier solved model in 15 iterations and 4.02 seconds (3.91 work units)
+Optimal objective 1.48342681e-13
+
+
+Root relaxation: objective 0.000000e+00, 2181 iterations, 0.96 seconds (0.72 work units)
+Total elapsed time = 7.56s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   22    0.02082    0.00000   100%     -    8s
+     0     0    0.00000    0   39    0.02082    0.00000   100%     -   10s
+     0     0    0.00000    0   35    0.02082    0.00000   100%     -   10s
+     0     0    0.00000    0   10    0.02082    0.00000   100%     -   13s
+     0     0    0.00000    0   25    0.02082    0.00000   100%     -   14s
+H    0     0                       0.0000000    0.00000  0.00%     -   15s
+     0     0    0.00000    0   12    0.00000    0.00000  0.00%     -   15s
+
+Cutting planes:
+  Learned: 16
+  Gomory: 1
+  Implied bound: 139
+  Clique: 7
+  MIR: 73
+  StrongCG: 1
+  Flow cover: 1
+  RLT: 6
+  Relax-and-lift: 18
+  BQP: 2
+  PSD: 8
+
+Explored 1 nodes (21650 simplex iterations) in 15.06 seconds (19.09 work units)
+Thread count was 10 (of 10 available processors)
+
+Solution count 2: 0 0.02082 
+
+Optimal solution found (tolerance 5.00e-03)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

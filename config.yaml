@@ -1,0 +1,24 @@
+---
+# Cost structure parameters for stage one hardening decisions
+fixed_cost: 25000
+variable_cost: 100000
+budget: 0
+mit_coarse: 1
+
+# False implies that we need to use generators from all operational nodes
+flexible_generation: True
+
+# True implies that we are solving robust optimization formulation of the problem instead of stochastic
+robust_flag: False
+
+# maximize or minimize
+set_objective: 'min'
+
+# Parameters for the power system model
+reference_bus: 313
+
+# Solver Parameters
+mip_gap: 0.005
+time_limit: 21600 
+solver_type: 'gurobi'
+solver_method: 2
